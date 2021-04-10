@@ -23,10 +23,17 @@
         box-shadow: 0 0 15px 4px rgba(104, 21, 21, 0.06);
         border-radius: 16px;
       }
+      span{
+          display: flex;
+          margin: 10px 0;
+          align-items: center;
+          justify-content: center;
+      }
     </style>
   </head>
   <body>
     <form>
+      <span>
       <p>Passport ID</p>
       <input type ="text" > 
       <button type="button" class = "submit-button" onclick ="document.location='airlinedatabase'">Submit</button>
@@ -34,6 +41,7 @@
           if it is found, go to airlinedatabase.
           if not, it doesn't leave the page just
           says "No documents found" --->
+      </span>
     </form>
 
   </body>
