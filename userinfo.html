@@ -49,7 +49,7 @@
         border-radius:10px;
     }
     span{
-      display: block;
+      display: flex;
       margin: 10px 0;
       align-items: center;
       justify-content: center;
@@ -65,9 +65,11 @@
 </head>
 <body>
   <form role="form" id="lost-form">
-    <span>
+    
 <div class="form-group">
+  <span>
   <label>Name: </label><input class="form-control" name="name" data-type="text" type="text">
+  </span>
 </div>
 <div class="form-group">
   <label>Passport id: </label><input class="form-control" name="passport-id" data-type="number" type="text">
@@ -107,7 +109,7 @@
   <div id="fg-errors" class="form-group">
   </div>
   <button class="btn btn-primary btn-lg" id="btn-submit" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Submitting...">Submit</button></form>
-    </span>
+
 <script>
 $(function () {
 
